@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre prénom" />
+
+    <EditText
+        android:id="@+id/editNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPrenom"
+        android:hint="Entrez votre nom" />
+
+    <EditText
+        android:id="@+id/editMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNom"
+        android:hint="Entrez votre Mail" />
+
+    <TextView
+        android:id="@+id/lblAnnee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editMail"
+        android:layout_marginTop="10dp"
+        android:text="Votre année d'étude" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupAnnee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblAnnee"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/rb1" android:text="1A" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <RadioButton android:id="@+id/rb2" android:text="2A" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerMatiere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupAnnee"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/editMoyenne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerMatiere"
+        android:layout_marginTop="10dp"
+        android:hint="Entrez votre moyenne"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editMoyenne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="ENREGISTRER" />
+
+</RelativeLayout>
